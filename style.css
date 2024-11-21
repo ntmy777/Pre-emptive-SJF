@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+div {
+    margin-bottom: 10px;
+}
+
+#ganttChart {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-columns: (1, 1fr);
+}
+
+.gridItem {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    justify-content: center;
+    width:30px;
+    height:20px;
+}
+
+.transparent{
+    border: 0px #ccc;
+    padding: 10px;
+    width:30px;
+    height:20px;
+}
+
+table{
+    visibility:hidden;
+}
+
+

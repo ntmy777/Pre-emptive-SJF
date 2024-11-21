@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Pre-emptive SJF scheduling</title>
+</head>
+
+<body>
+    <h1>Pre-emptive SJF scheduling</h1>
+    <div id="input">
+        <legend><b>Input</b></legend>
+        <div id="row1">
+            <label for="process">Process:</label>
+            <input type="text" id="process" required placeholder="Ex.P0 P1 P2" />
+        </div>
+        <div id="row2">
+            <label for="at">Arrival Time:</label>
+            <input type="text" id="at" required placeholder="Ex.0 1 2 3" />
+        </div>
+        <div id="row3">
+            <label for="bt">Burst Time:</label>
+            <input type="text" id="bt" required placeholder="Ex.1 2 3 4 5" />
+        </div>
+        <div class="row4">
+            <label for="priority">Priority:</label>
+            <input type="text" id="priority" required placeholder="Ex.0 1 2 3" />
+        </div>
+        <button>Run</button>
+    </div>
+
+    <div id="output">
+        <legend><b>Output</b></legend>
+        <div id="gt">Gantt Chart
+            <div id="ganttChart"></div>
+        </div>
+        <div id="tableForm">Table
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>PROCESS</th>
+                        <th>ARRIVAL TIME</th>
+                        <th>BURST TIME</th>
+                        <th>FINISHING TIME</th>
+                        <th>TURNAROUND TIME</th>
+                        <th>WAITING TIME</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+
+        <div id="ave">
+            <div id="totalTurn"></div>
+            <div id="aveTurn"></div>
+            <div id="totalWait"></div>
+            <div id="aveWait"></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
